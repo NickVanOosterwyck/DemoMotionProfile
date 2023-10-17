@@ -1,7 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Graph</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        /* Add any styling you'd like here */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        #svg {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <input type="range" id="slider1" min="1" max="100" value="50">
+    <input type="range" id="slider2" min="1" max="100" value="50">
+    <svg width="500" height="500" id="svg"></svg>
+    <script src="script.js"></script>
 </body>
 </html>
