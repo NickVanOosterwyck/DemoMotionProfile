@@ -1,6 +1,6 @@
 // Set up the SVG canvas dimensions
 const width = 500;
-const height = 500;
+const height = 250;
 
 // Create scales for the X and Y axes
 const xScale = d3.scaleLinear().domain([0, 2]).range([0, width]); // only two points (start and end)
